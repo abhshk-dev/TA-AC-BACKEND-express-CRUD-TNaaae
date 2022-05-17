@@ -1,10 +1,10 @@
 writeCode
 
-Q. Create an express application named `user-diary-3`.
+Q. Create an express application  named `user-diary-3`.
 
 Each user should have fields:
 
-- name!
+- name!  
 - email!
 - age
 - address
