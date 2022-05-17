@@ -1,6 +1,6 @@
 writeCode
 
-Q. create an express app named `user-diary` from scratch
+Q. create   an express app named `user-diary` from scratch
 
 - use ejs as template engine
 - navigate to application
