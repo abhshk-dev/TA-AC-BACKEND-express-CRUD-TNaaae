@@ -1,6 +1,6 @@
 writeCode
 
-Q. Create an express application named `user-diary-2`
+Q. Create an  express application named `user-diary-2`
 
 - use ejs as template engine
 - connect to mongodb database
