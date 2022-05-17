@@ -1,6 +1,6 @@
 writeCode
 
-In previous application, delete a user using a delete button
+In previous  application, delete a user using a delete button
 
 handle a route i.e. GET request on "/users/:userId/delete"
 
