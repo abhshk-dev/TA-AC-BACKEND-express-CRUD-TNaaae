@@ -1,6 +1,6 @@
 writeCode
 
-Create a user resource
+Create a  user resource
 
 1. generate User model
 2. add a POST request on "/users" in user router to handle form data.
