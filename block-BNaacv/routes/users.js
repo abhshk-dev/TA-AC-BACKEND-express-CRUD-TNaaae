@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-
+const User = require("../models/User");
 // list all users
 router.get("/", (req, res) => {
   // handle Action
@@ -14,7 +14,9 @@ router.get("/new", (req, res) => {
 
 router.post("/", (req, res) => {
   // capture form data
-  res.send(req.body);
+  User.create(req.body)
+    .then((data) => res.redirect("/"))
+    .catch((err) => res.redirect("/users/new"));
 });
 
 router.get("/:id", (req, res) => {

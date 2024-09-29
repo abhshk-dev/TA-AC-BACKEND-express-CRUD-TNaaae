@@ -1,7 +1,18 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const path = require("path");
 const { send } = require("process");
 const usersRouter = require("./routes/users");
+
+// Connecting to Database
+mongoose
+  .connect("mongodb://127.0.0.1:27017/users")
+  .then(() => {
+    console.log(`mongodb connection established`);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 // Initializing App
 const app = express();
