@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/users/<%=user.id%>" method="POST">
+      <input
+        type="text"
+        name="name"
+        placeholder="enter your name"
+        value="<%= user.name %>"
+        required
+      />
+      <input
+        type="email"
+        name="email"
+        placeholder="enter your email"
+        value="<%= user.email %>"
+        required
+      />
+      <input
+        type="number"
+        name="age"
+        placeholder="enter your Age"
+        value="<%= user.age %>"
+      />
+      <textarea
+      name="address"
+      rows="10"
+      cols="30"
+      maxlength="200"
+      placeholder="enter your bio"
+    >
+    <%= user.address %>
+    </textarea>
+      <textarea
+        name="bio"
+        rows="10"
+        cols="30"
+        maxlength="200"
+        placeholder="enter your bio"
+      >
+      <%= user.bio %>
+      </textarea>
+      <textarea name="hobbies" rows="10" cols="20" placeholder="enter your hobbies">
+        <%= user.hobbies %>
+      </textarea>
+      <input type="submit" value="Update user" />
+    </form>
+  </body>
+</html>
